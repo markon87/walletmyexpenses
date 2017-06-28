@@ -1,0 +1,42 @@
+/***************************
+********General******
+***************************/
+html{
+	font-size: 62.5%;
+	&.no-scroll{
+	    height: 100%;
+	    overflow: hidden;
+	}
+}
+html, body{
+	padding: 0;
+	margin: 0;
+	font-family: $general-font;
+}
+body{
+	background-color: $body-color;
+	font-size: 1.4rem;
+  &.no-scroll{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+main{
+	width: 90vw;
+	display: flex;
+	margin: 50px auto;
+	box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+	overflow: hidden;
+	border-radius: 5px;
+	background-color: #fff;
+  & > section{
+    display: inline-block;
+    padding: 50px;
+    overflow: auto;
+  }
+}
+h1{
+	color: #707584;
+	font-size: 2.4rem;
+}

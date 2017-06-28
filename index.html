@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Wallet my expanses</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel='shortcut icon' href='img/favicon-expanses.ico' type='image/x-icon'/ >
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+
+		<script type="text/javascript" src="dist/jquery-3.2.1.min.js" defer></script>
+		<script type="text/javascript" src="main.js" defer></script>
+	</head>
+	<body>
+		<main>
+			<div id="nav-icon" class="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<section class="wallets">
+				<div class="header">
+					<h1>My Wallets</h1><span class="add-new-card">+</span>
+				</div>
+				<div class="cards-container">
+					<div class="card active" data-id="3">
+						<span class="delete">X</span>
+						<img src="img/visa.png" alt="Credit card" />
+						<p class="card-number">**** **** **** <span>2562</span></p>
+						<p class="valid-thru">Valid Thru: <span class="date">12/17</span></p>
+					</div>
+					<div class="card" data-id="2">
+						<span class="delete">X</span>
+						<img src="img/amex.png" alt="Credit card" />
+						<p class="card-number">**** ******* <span>21001</span></p>
+						<p class="valid-thru">Valid Thru: <span class="date">07/19</span></p>
+					</div>
+					<div class="card" data-id="1">
+						<span class="delete">X</span>
+						<img src="img/master.png" alt="Credit card" />
+						<p class="card-number">**** **** **** <span>8335</span></p>
+						<p class="valid-thru">Valid Thru: <span class="date">09/17</span></p>
+					</div>
+				</div>
+			</section>
+			<section class="balance">
+				<div id="3" class="card-info active">
+					<div class="header">
+						<h1>Current Balance</h1><p class="curr-balance">$729.<span class="cents">00</span></p>
+					</div>
+					<div class="transaction-container">
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Apple iPhone 6, 6g GB</p>
+								<p>Electronics #343223  - 12 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$650.<span class="cents">00</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="add">
+								<p>+</p>
+							</div>
+							<div class="transaction-info">
+								<p>Founds Added</p>
+								<p>Payment  #343212  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost adding">
+								<p>$900.<span class="cents">00</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Energy Bill</p>
+								<p>#343566  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$84.<span class="cents">96</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Mega Image SRL</p>
+								<p>Food&Health #34365  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$112.<span class="cents">75</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>ATM DV24</p>
+								<p>#343253  - 09 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$200.<span class="cents">00</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Lukoil Station</p>
+								<p>Gas #343279  - 09 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$190.<span class="cents">48</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="2" class="card-info">
+					<div class="header">
+						<h1>Current Balance</h1><p class="curr-balance">$1124.<span class="cents">00</span></p>
+					</div>
+					<div class="transaction-container">
+						<div class="transaction">
+							<div class="add">
+								<p>+</p>
+							</div>
+							<div class="transaction-info">
+								<p>Founds Added</p>
+								<p>Payment  #343212  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost adding">
+								<p>$900.<span class="cents">00</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Energy Bill</p>
+								<p>#343566  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$115.<span class="cents">96</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Mega Image SRL</p>
+								<p>Food&Health #34365  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$50.<span class="cents">75</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>ATM DV24</p>
+								<p>#343253  - 09 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$200.<span class="cents">00</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="1" class="card-info">
+					<div class="header">
+						<h1>Current Balance</h1><p class="curr-balance">$515.<span class="cents">00</span></p>
+					</div>
+					<div class="transaction-container">
+						<div class="transaction">
+							<div class="add">
+								<p>+</p>
+							</div>
+							<div class="transaction-info">
+								<p>Founds Added</p>
+								<p>Payment  #343212  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost adding">
+								<p>$900.<span class="cents">00</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Energy Bill</p>
+								<p>#343566  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$84.<span class="cents">96</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Mega Image SRL</p>
+								<p>Food&Health #34365  - 11 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$112.<span class="cents">75</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>ATM DV24</p>
+								<p>#343253  - 09 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$200.<span class="cents">00</span></p>
+							</div>
+						</div>
+						<div class="transaction">
+							<div class="sub">
+								<p>-</p>
+							</div>
+							<div class="transaction-info">
+								<p>Lukoil Station</p>
+								<p>Gas #343279  - 09 July, 2015</p>
+							</div>
+							<div class="transaction-cost">
+								<p>$190.<span class="cents">48</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<div class="add-new">
+			<div class="form">
+				<span class="close">X</span>
+				<h2>Add new credit card</h2>
+				<div class="choose-card">
+				<p>Choose you credit card</p>
+					<img src="img/visa.png" alt="Credit card" data-card="visa" />
+					<img src="img/amex.png" alt="Credit card" data-card="amex" />
+					<img src="img/master.png" alt="Credit card" data-card="master" />
+				</div>
+				<div class="enter-card-number">
+					<label>Enter credit card number</label>
+					<input type="text" name="card-number" placeholder="Enter credit card number" maxlength="16" />
+				</div>
+				<div class="enter-exp-date">
+				<label>Enter card exparation date</label>
+					<input type="text" name="date" placeholder="mm/yy" maxlength="4" />
+				</div>
+				<span class="btn-add">Add</span>
+			</div>
+		</div>
+		<div class="overlay"></div>
+		<div class="menu-overlay"></div>
+	</body>
+</html>

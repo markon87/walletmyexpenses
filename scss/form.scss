@@ -1,0 +1,98 @@
+/*** Add new - form ***/
+.add-new{
+  position: absolute; 
+  left: 50%;
+  top: -1000px;
+  z-index: 6;
+  transition: top .3s;
+  width: 90%;
+  &.on{
+    top: 50px;
+  }
+  .form{
+    position: relative; 
+    left: -50%;
+    padding: 40px 50px;
+    background-color: #fff;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+    h2{
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 10px;
+    }
+  }
+  input{
+    width: 100%;
+    margin: 5px 1px;
+    padding: 5px;
+  }
+}
+.overlay, .menu-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .3s;
+    visibility: hidden;
+}
+.overlay.on, .menu-overlay.on {
+    opacity: .6;
+    visibility: visible;
+    z-index: 1;
+}
+.overlay.on{
+  z-index: 5;
+}
+.choose-card{
+  margin-left: -3px;
+  p{
+    margin: 5px 3px;
+  }
+  img{
+    border: 3px solid #fff;
+  }
+}
+.choose-card img.active, .choose-card img:hover{
+  border: 3px solid #8393ca;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.choose-card, .enter-card-number, .enter-exp-date{
+  margin-bottom: 10px;
+}
+span.close {
+    position: absolute;
+    top: 15px;
+    right: 36px;
+    color: #fff;
+    font-size: 2rem;
+    background-color: #333;
+    border: 1px solid #333;
+    padding: 0px 9px;
+    &:hover{
+      cursor: pointer;
+      background-color: #fff;
+      color: #333;
+    }
+}
+span.btn-add {
+    display: block;
+    margin: 15px 0;
+    background-color: #8393ca;
+    color: #fff;
+    width: 50px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background-color:#6e7ba9;
+    }
+}
+@media screen and (min-width: 960px){
+  .add-new{
+    width: initial;
+  }
+}
